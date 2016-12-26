@@ -297,6 +297,7 @@ def init():
 
 
 def requirePlexPass():
+    return True
     if not plexapp.ACCOUNT.hasPlexPass():
         from windows import signin, background
         background.setSplash(False)
